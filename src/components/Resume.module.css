@@ -1,0 +1,166 @@
+.resume {
+    position: relative;
+}
+
+.resumeGrid {
+    display: grid;
+    gap: 2rem;
+}
+
+.summaryCard {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+
+.sectionTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.sectionTitle::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 24px;
+    background: linear-gradient(180deg, var(--primary), var(--primary-light));
+    border-radius: 2px;
+}
+
+.summaryText {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.highlights {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.highlights li {
+    padding: 0.5rem 1rem;
+    background: var(--primary-glow);
+    border-radius: 50px;
+    font-size: 0.875rem;
+    color: var(--primary-light);
+}
+
+.column {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--primary), transparent);
+}
+
+.timelineItem {
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.timelineItem:last-child {
+    padding-bottom: 0;
+}
+
+.timelineDot {
+    position: absolute;
+    left: -1.875rem;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    background: var(--background);
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timelineContent {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.timelineContent:hover {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.itemTitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.itemPeriod {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.itemOrg {
+    color: var(--text-secondary);
+    font-size: 0.9375rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.itemList {
+    margin: 0;
+    padding-left: 1.25rem;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    line-height: 1.8;
+}
+
+.itemList li {
+    margin-bottom: 0.5rem;
+}
+
+.itemList li:last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .resumeGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .summaryCard {
+        grid-column: 1 / -1;
+    }
+}
