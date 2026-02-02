@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import AntigravityBackground from "@/components/AntigravityBackground";
+import SplashCursor from "@/components/SplashCursor";
 
 export const metadata: Metadata = {
   title: "Saquib Kazi | Software Engineer",
@@ -25,6 +27,8 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
       <body>
+        <AntigravityBackground />
+        <SplashCursor />
         {children}
       </body>
     </html>
