@@ -22,8 +22,8 @@ const skills = [
     { name: "Selenium", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" },
     { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
     { name: "Vercel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" },
-    { name: "OpenAI", icon: "https://cdn.simpleicons.org/openai/412991" },
-    { name: "Claude", icon: "https://cdn.simpleicons.org/anthropic/d4a27f" },
+    { name: "ChatGPT", icon: "/images/chatgpt.svg" },
+    { name: "Claude", icon: "https://cdn.simpleicons.org/claude" },
 ];
 
 const containerVariants = {
